@@ -16,8 +16,10 @@ books = [
 # allowed_chars = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=\"\':;[]{}/<>,.`~\n\\'
 
 #german
-allowed_chars = ' aäbcdefghijklmnoöpqrsßtuüvwxyzABCDEFGHIJKLMNOÖPQRSTUÜVWXYZ0123456789!@#$%^&*()-_+=\"\':;[]{}/<>,.`~\n\\'
+#allowed_chars = ' aäbcdefghijklmnoöpqrsßtuüvwxyzABCDEFGHIJKLMNOÖPQRSTUÜVWXYZ0123456789!@#$%^&*()-_+=\"\':;[]{}/<>,.`~\n\\'
 
+#spanish
+allowed_chars = ' áàãâéêíîóõôúüûçÇabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=\"\':;[]{}/<>,.`~\n\\'# allowed_chars = '
 
 def download_book(book):
     return requests.get(book).content.decode('utf-8')
